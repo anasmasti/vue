@@ -1,15 +1,35 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <ToggleVue />
+    <TodoVue />
+    <TodoCompletedVue />
+    <FetchTodo />
+    <ParentComp />
+    <CountVue />
+    <ClassBinding />
+    <RendringDec />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ToggleVue from './components/ToggleVue.vue';
+import TodoVue from './components/TodoVue.vue';
+import TodoCompletedVue from './components/TodoCompletedVue.vue';
+import FetchTodo from './components/FetchTodo.vue';
+import ParentComp from './components/ParentComp.vue';
+import CountVue from './components/CountVue.vue';
+import ClassBinding from './components/ClassBinding.vue';
+import RendringDec from './components/RendringDec.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ToggleVue,
+    TodoVue,
+    TodoCompletedVue,
+    FetchTodo,
+    ParentComp,
+    CountVue,
+    ClassBinding,
+    RendringDec
   }
 }
 </script>
